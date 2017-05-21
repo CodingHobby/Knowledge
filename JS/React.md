@@ -41,7 +41,7 @@ render() {
 Ok, so one of the things I used to get wrong when I started using React is that I forgot to call `super()` in an element's constructor before trying to access `this`. I know it's technically not a React-exclusive thing, but if you don't write a lot of ES6, then it's pretty difficult to come across this problem:
 
 ```javascript
-class Element extends React.Element {
+class Element extends React.Component {
   constructor(props) {
     super(props)
 
